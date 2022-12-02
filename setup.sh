@@ -285,10 +285,6 @@ echo
 
 # user + SSH
 
-id -u "${LOGINUSERNAME}" &>/dev/null || adduser --disabled-password --gecos "" "${LOGINUSERNAME}"
-echo "${LOGINUSERNAME}:${LOGINPASSWORD}" | chpasswd
-adduser "${LOGINUSERNAME}" sudo
-
 
 
 echo
